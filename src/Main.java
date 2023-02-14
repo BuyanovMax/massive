@@ -31,47 +31,44 @@ public class Main {
 
 
 
-
-
-
-
         System.out.println("Задача 2");
-        for (int i = 0; i < number.length-1; i++) {
-            System.out.print(number[i] + ",");
+        for (int i = 0; i < number.length; i++) {
+            if (i == number.length - 1) {
+                System.out.println(number[i]);
+                break;
+            }
+            System.out.print(number[i]+ " ");
         }
-        System.out.print(number3);
-        System.out.println();
-        double x = doubleNumber[doubleNumber.length-1];
-        for (int i = 0; i <doubleNumber.length-1; i++) {
-            System.out.print(doubleNumber[i]+",");
+        for (int i = 0; i < doubleNumber.length; i++) {
+            if (i == doubleNumber.length - 1) {
+                System.out.println(doubleNumber[i]);
+                break;
+            }
+            System.out.print(doubleNumber[i] + " ");
         }
-        System.out.print(x);
-        System.out.println();
-        double y = massive[massive.length - 1];
-        for (int i = 0; i < massive.length-1; i++) {
-            System.out.print(massive[i] + ",");
+        for (int i = 0; i < massive.length; i++) {
+            if (i == massive.length - 1) {
+                System.out.println(massive[i]);
+                break;
+            }
+            System.out.print(massive[i] + " ");
         }
-        System.out.print(y);
-        System.out.println();
-
-
-
 
 
 
 
         System.out.println("Задача 3");
-        for (int i = number.length-1; i >0; i--) {
+        for (int i = number.length - 1; i > 0; i--) {
             System.out.print(number[i] + ",");
         }
         System.out.print(number[0]);
         System.out.println();
-        for (int i = doubleNumber.length-1; i >0; i--) {
-            System.out.print(doubleNumber[i]+",");
+        for (int i = doubleNumber.length - 1; i > 0; i--) {
+            System.out.print(doubleNumber[i] + ",");
         }
         System.out.print(doubleNumber[0]);
         System.out.println();
-        for (int i = massive.length-1; i >0; i--) {
+        for (int i = massive.length - 1; i > 0; i--) {
             System.out.print(massive[i] + ",");
         }
         System.out.print(massive[0]);
@@ -83,7 +80,7 @@ public class Main {
 
 
         System.out.println("Задача 4");
-        for (int i= 0; i <number.length ; i++) {
+        for (int i = 0; i < number.length; i++) {
             if (number[i] % 2 != 0) {
                 number[i] = number[i] + 1;
                 System.out.print(number[i] + " ");
